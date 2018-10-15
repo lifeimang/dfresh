@@ -1,0 +1,39 @@
+*** Starting uWSGI 2.0.15 (64bit) on [Tue Jan 23 17:06:27 2018] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 8.0.0 (clang-800.0.42.1) on 30 October 2017 06:31:19
+os: Darwin-15.6.0 Darwin Kernel Version 15.6.0: Mon Jan  9 23:07:29 PST 2017; root:xnu-3248.60.11.2.1~1/RELEASE_X86_64
+nodename: smartli.local
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /Users/smart/Desktop/dj/bj22/dailyfresh
+writing pidfile to uwsgi2.pid
+detected binary path: /Users/smart/.virtualenvs/dailyfresh/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /Users/smart/Desktop/dj/bj22/dailyfresh
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 10240
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8081 fd 3
+Python version: 3.5.2 (default, Oct 21 2017, 11:45:19)  [GCC 4.2.1 Compatible Apple LLVM 8.0.0 (clang-800.0.42.1)]
+Set PythonHome to /Users/smart/.virtualenvs/dailyfresh
+Python main interpreter initialized at 0x7feed8e00970
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415200 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7feed8e00970 pid: 6793 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 6793)
+spawned uWSGI worker 1 (pid: 6794, cores: 2)
+spawned uWSGI worker 2 (pid: 6795, cores: 2)
+spawned uWSGI worker 3 (pid: 6796, cores: 2)
+spawned uWSGI worker 4 (pid: 6797, cores: 2)
+[pid: 6797|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 807 bytes} [Tue Jan 23 17:12:42 2018] GET /index => generated 13742 bytes in 582 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 6794|app: 0|req: 1/2] 127.0.0.1 () {42 vars in 807 bytes} [Tue Jan 23 17:12:58 2018] GET /index => generated 13742 bytes in 449 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 6796|app: 0|req: 1/3] 127.0.0.1 () {42 vars in 780 bytes} [Tue Jan 23 17:55:23 2018] GET /user/login => generated 2154 bytes in 410 msecs (HTTP/1.1 200) 4 headers in 224 bytes (2 switches on core 0)
+[pid: 6795|app: 0|req: 1/4] 127.0.0.1 () {44 vars in 850 bytes} [Tue Jan 23 17:55:31 2018] GET /index => generated 13742 bytes in 458 msecs (HTTP/1.1 200) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 6797|app: 0|req: 2/5] 127.0.0.1 () {42 vars in 780 bytes} [Tue Jan 23 18:00:37 2018] GET /user/login => generated 2154 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 6797|app: 0|req: 3/6] 127.0.0.1 () {40 vars in 765 bytes} [Tue Jan 23 18:00:40 2018] GET /user/login?next=/user/ => generated 2154 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
